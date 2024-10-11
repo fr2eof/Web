@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Point Checker</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/toast.css">
+    <script defer src="js_scripts/table.js"></script>
+    <script defer src="js_scripts/graph.js"></script>
+    <script defer src="js_scripts/index.js"></script>
+</head>
+<body>
+<header>
+    <h1>Point Checker</h1>
+    <div class="student-info">
+        Student: Ivanov Ilya<br>
+        Group: P3217<br>
+        Variant: 412952
+    </div>
+</header>
+<main>
+    <div class="content-container">
+        <canvas class="horizontal" id="canvas"></canvas>
+        <form class="horizontal" action="/static" method="POST" id="pointForm">
+            <label>X coordinate:</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <label for="checkbox-1">-2</label>
+                    <input type="checkbox" id="checkbox-1" value="-2">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-2">-1.5</label>
+                    <input type="checkbox" id="checkbox-2" value="-1.5">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-3">-1</label>
+                    <input type="checkbox" id="checkbox-3" value="-1">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-4">-0.5</label>
+                    <input type="checkbox" id="checkbox-4" value="-0.5">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-5">0</label>
+                    <input type="checkbox" id="checkbox-5" value="0">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-6">0.5</label>
+                    <input type="checkbox" id="checkbox-6" value="0.5">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-7">1</label>
+                    <input type="checkbox" id="checkbox-7" value="1">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-8">1.5</label>
+                    <input type="checkbox" id="checkbox-8" value="1.5">
+                </div>
+                <div class="checkbox-item">
+                    <label for="checkbox-9">2</label>
+                    <input type="checkbox" id="checkbox-9" value="2">
+                </div>
+            </div>
+
+            <label for="y">Y coordinate:</label>
+            <input type="text" id="y" name="y" required pattern="[+-]?(\d+\.*\d*)" min="-5" max="3"
+                   placeholder="Enter a number from -5.0 to 3.0">
+
+            <label for="r">Radius:</label>
+            <input type="text" id="r" name="r" required pattern="\d+\.*\d*" min="1" max="4"
+                   placeholder="Enter a number from 1.0 to 4.0">
+
+            <button id="checkButton" type="submit">Check Point</button>
+        </form>
+        <div class="table-container"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="prevPage()">Previous</button>
+        <button onclick="nextPage()">Next</button>
+        <button onclick="clearTable()">Clear</button>
+    </div>
+    <div id="toast">
+        <img id="img" src="media/toast_icon.jpg" alt="">
+        <div id="desc"></div>
+    </div>
+
+</main>
+
+<footer id="copyright">i have no rights</footer>
+</body>
+</html>
