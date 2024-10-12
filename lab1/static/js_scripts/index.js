@@ -1,7 +1,7 @@
 const PORT = 5656;
 const HOST = "localhost";
 
-const form = document.getElementById("form");
+const form = document.getElementById("pointForm");
 const y_value = document.getElementById("y");
 const r_value = document.getElementById("r");
 
@@ -10,7 +10,7 @@ let r_global = 0.0
 window.addEventListener('load', () => {
     drawAxes(centerX, centerY);
     createNewTablePage();
-    loadResults();
+    loadTableData();
 
     //assigning Event Handlers
     r_value.addEventListener("change", () => {
@@ -144,41 +144,38 @@ window.addEventListener('load', () => {
                 },
                 body: JSON.stringify(data)
             }).then(response => {
-                    if (response.status === 400) {
-                        response.text().then(() => {
-                            launch_toast("Error 400: The page will reload automatically in 5 sec.");
-                            setTimeout(() => {
-                                window.location.reload();
-                            }, 5000);
-                        });
-                        return;
-                    }
-                    else if (response.status === 404) {
-                        response.text().then(() => {
-                            launch_toast("Error 404: The page will reload automatically in 5 sec.");
-                            setTimeout(() => {
-                                window.location.reload();
-                            }, 5000);
-                        });
-                        return;
-                    }
-                    else if (response.status === 500) {
-                        response.text().then(() => {
-                            launch_toast("Error 500: The page will reload automatically in 5 sec.");
-                            setTimeout(() => {
-                                window.location.reload();
-                            }, 5000);
-                        });
-                        return;
-                    }
-                    else if (!response.ok) {
-                        launch_toast("Something else went wrong. The page will reload automatically in 5 sec.");
+                if (response.status === 400) {
+                    response.text().then(() => {
+                        launch_toast("Error 400: The page will reload automatically in 5 sec.");
                         setTimeout(() => {
                             window.location.reload();
                         }, 5000);
-                    }
-                    return response.json();
-                })
+                    });
+                    return;
+                } else if (response.status === 404) {
+                    response.text().then(() => {
+                        launch_toast("Error 404: The page will reload automatically in 5 sec.");
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 5000);
+                    });
+                    return;
+                } else if (response.status === 500) {
+                    response.text().then(() => {
+                        launch_toast("Error 500: The page will reload automatically in 5 sec.");
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 5000);
+                    });
+                    return;
+                } else if (!response.ok) {
+                    launch_toast("Something else went wrong. The page will reload automatically in 5 sec.");
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 5000);
+                }
+                return response.json();
+            })
                 .then(response => {
                     //console.log("Ответ сервера:", response);
                     try {
