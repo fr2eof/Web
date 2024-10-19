@@ -1,5 +1,5 @@
 let currentPage = 1;
-const maxRowsPerPage = 10;
+const maxRowsPerPage = 20;
 const tables = [];
 let number = 1;
 
