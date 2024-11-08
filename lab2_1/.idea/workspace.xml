@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab1/target/classes/se/ifmo/ru/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/target/classes/se/ifmo/ru/App.class" afterDir="false" />
-    </list>
+    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +82,7 @@
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="SERVER_GROUP" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
@@ -176,7 +174,7 @@
       <workItem from="1730889406095" duration="16251000" />
       <workItem from="1730968514777" duration="188000" />
       <workItem from="1730988738197" duration="832000" />
-      <workItem from="1731057843757" duration="1058000" />
+      <workItem from="1731057843757" duration="2023000" />
     </task>
     <servers />
   </component>
