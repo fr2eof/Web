@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: no-repeat fixed center center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 5px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header .nickname {
+    margin-right: 10px;
+}
+
+#premium {
+    animation: yellowGlow 3s infinite;
+}
+
+@keyframes yellowGlow {
+    0%, 100% {
+        color: #ffd700;
+    }
+    25% {
+        color: #ffff33;
+        text-shadow: 0 0 5px #ffff33, 0 0 10px #ffeb3b, 0 0 15px #ffdd00;
+    }
+    50% {
+        color: #ffff00;
+        text-shadow: 0 0 5px #ffff00, 0 0 10px #ffdd33, 0 0 15px #ffeb3b;
+    }
+    75% {
+        color: #fff200;
+        text-shadow: 0 0 5px #fff200, 0 0 10px #ffd700, 0 0 15px #ffeb3b;
+    }
+}
+
+#v_boy {
+    height: 40px;
+    width: 160px;
+    font-size: 18px;
+    background: #e30000;
+    color: white;
+    animation: redGlow 3s infinite;
+}
+
+@keyframes redGlow {
+    0% {
+        background: #e30000;
+    }
+    50% {
+        background: #670000;
+    }
+    100% {
+        background: #ae0000;
+    }
+}
+
+#vzvod {
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    background-color: #777;
+}
+
+#vzvod:hover {
+    background-color: #575757;
+}
+
+#mode {
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    background-color: #777;
+}
+
+.header .currency {
+    display: flex;
+    align-items: center;
+}
+
+.header .currency span {
+    margin: 10px;
+}
+
+.header .currency .gold {
+    color: gold;
+}
+.header .currency .gold:hover {
+    background: #4a4a4a;
+}
+
+.header .currency .silver {
+    color: silver;
+}
+.header .currency .silver:hover {
+    background: #4a4a4a;
+}
+
+.header .currency .free-xp {
+    color: #ed6b05;
+}
+.header .currency .free-xp:hover {
+    background: #4a4a4a;
+}
+
+.header .gear-icon {
+    margin: 5px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.header .gear-icon:hover {
+    transform: scale(1.4);
+}
+
+.header .gear-icon::before {
+    content: "\2699";
+}
+
+
+.tank-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tank-item {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    background-size: 100% 100%;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.tank-1 {
+    background-image: url('../media/picture/t-34-85.png');
+}
+
+.tank-2 {
+    background-image: url('../media/picture/maus.png');
+}
+
+.tank-3 {
+    background-image: url('../media/picture/bz-75.png');
+}
