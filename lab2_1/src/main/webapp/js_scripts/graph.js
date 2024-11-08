@@ -49,8 +49,8 @@ canvas.addEventListener("click", function (event) {
             } else {
                 const directory = './media/soundtracks/';
                 const fileNameTemplate = 'rikoshet{x}.mp3';
-                let trackNumber = ((Math.floor(Math.random() * (10 - 1 + 1)) + 1) % 3) + 1;
-                const filePath = directory + fileNameTemplate.replace('{x}', trackNumber);
+                //let trackNumber = ((Math.floor(Math.random() * (10 - 1 + 1)) + 1) % 3) + 1;
+                const filePath = directory + fileNameTemplate.replace('{x}', 1);
                 const audio = new Audio(filePath);
                 audio.play()
             }
@@ -132,9 +132,7 @@ function drawPoint(x_value, y_values) {
         setTimeout(() => {
             document.querySelector('#checkButton').classList.remove('charging');
         }, 2000);
-        console.log(x_value)
         gunshotSound.play()
-        console.log(x_value)
         gunshotSound.addEventListener('ended', () => {
             reloadSound.play();
         });

@@ -45,8 +45,8 @@ public class AreaCheckServlet extends HttpServlet {
                     session.setAttribute("tableData", tableData);
                 }
                 tableData.addPoint(point);
-                request.getRequestDispatcher("./answer.jsp").forward(request, response);
             }
+            request.getRequestDispatcher("./answer2.jsp").forward(request, response);//todo change if need alt front
         } catch (NumberFormatException | NullPointerException | IllegalStateException e) {
             log.warning(e.getMessage());
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid request parameters");

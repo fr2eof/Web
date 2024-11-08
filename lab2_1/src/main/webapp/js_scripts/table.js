@@ -21,7 +21,7 @@ function addResultToTable(x, y, r, hit, currentTime, executedTime) {
     rCell.textContent = r;
 
     const resultCell = document.createElement("td");
-    resultCell.textContent = hit ? "Hit" : "Miss";
+    resultCell.textContent = hit ? "ЕСТЬ ПРОБИТИЕ" : "НЕ ПРОБИЛ";
 
     const currentTimeCell = document.createElement("td");
     currentTimeCell.textContent = currentTime;
@@ -38,7 +38,6 @@ function addResultToTable(x, y, r, hit, currentTime, executedTime) {
     newRow.appendChild(executedTimeCell);
 
     currentTable.insertBefore(newRow, currentTable.rows[1]);
-    saveTableData(x, y, r, hit, currentTime, executedTime);
 
     if (currentTable.rows.length > maxRowsPerPage) {
         currentPage++;
@@ -100,75 +99,75 @@ function prevPage() {
     }
 }
 
-function saveTableData(x, y, r, shot, currentTime, executedTime) {
-    if (typeof localStorage === 'undefined') {
-        console.error('localStorage is not supported in this browser.');
-        return;
-    }
+// function saveTableData(x, y, r, shot, currentTime, executedTime) {
+//     if (typeof localStorage === 'undefined') {
+//         console.error('localStorage is not supported in this browser.');
+//         return;
+//     }
+//
+//     const storedTableData = JSON.parse(localStorage.getItem('tableData')) || [];
+//     storedTableData.push({x, y, r, shot, currentTime, executedTime});
+//     localStorage.setItem('tableData', JSON.stringify(storedTableData));
+// }
 
-    const storedTableData = JSON.parse(localStorage.getItem('tableData')) || [];
-    storedTableData.push({x, y, r, shot, currentTime, executedTime});
-    localStorage.setItem('tableData', JSON.stringify(storedTableData));
-}
+// function loadTableData() {
+//     if (typeof localStorage === 'undefined') {
+//         console.error('localStorage is not supported in this browser.');
+//         return;
+//     }
+//
+//     try {
+//         const storedTableData = JSON.parse(localStorage.getItem('tableData'));
+//         if (storedTableData) {
+//             tables.forEach(table => {
+//                 table.innerHTML = `
+//                     <tr>
+//                         <th>№</th>
+//                         <th>x</th>
+//                         <th>y</th>
+//                         <th>R</th>
+//                         <th>Result</th>
+//                         <th>Executed at</th>
+//                         <th>Execution time</th>
+//                     </tr>
+//                 `;
+//             });
+//
+//             number = 1;
+//
+//             storedTableData.forEach(result => {
+//                 addResultToTable(result.x, result.y, result.r, result.shot, result.currentTime, result.executedTime);
+//             });
+//         }
+//     } catch (error) {
+//         console.error('Error parsing tableData from localStorage:', error);
+//     }
+// }
 
-function loadTableData() {
-    if (typeof localStorage === 'undefined') {
-        console.error('localStorage is not supported in this browser.');
-        return;
-    }
-
-    try {
-        const storedTableData = JSON.parse(localStorage.getItem('tableData'));
-        if (storedTableData) {
-            tables.forEach(table => {
-                table.innerHTML = `
-                    <tr>
-                        <th>№</th>
-                        <th>x</th>
-                        <th>y</th>
-                        <th>R</th>
-                        <th>Result</th>
-                        <th>Executed at</th>
-                        <th>Execution time</th>
-                    </tr>
-                `;
-            });
-
-            number = 1;
-
-            storedTableData.forEach(result => {
-                addResultToTable(result.x, result.y, result.r, result.shot, result.currentTime, result.executedTime);
-            });
-        }
-    } catch (error) {
-        console.error('Error parsing tableData from localStorage:', error);
-    }
-}
-
-function clearTableData() {
-    if (typeof localStorage === 'undefined') {
-        console.error('localStorage is not supported in this browser.');
-        return;
-    }
-
-    localStorage.removeItem('tableData');
-
-    tables.forEach(table => {
-        table.innerHTML = `
-            <tr>
-                <th>№</th>
-                <th>x</th>
-                <th>y</th>
-                <th>R</th>
-                <th>Result</th>
-                <th>Executed at</th>
-                <th>Execution time</th>
-            </tr>
-        `;
-    });
-
-    currentPage = 1;
-    number = 1;
-
-    updateVisibleTable();
-}
+// function clearTableData() {
+//     if (typeof localStorage === 'undefined') {
+//         console.error('localStorage is not supported in this browser.');
+//         return;
+//     }
+//
+//     localStorage.removeItem('tableData');
+//
+//     tables.forEach(table => {
+//         table.innerHTML = `
+//             <tr>
+//                 <th>№</th>
+//                 <th>x</th>
+//                 <th>y</th>
+//                 <th>R</th>
+//                 <th>Result</th>
+//                 <th>Executed at</th>
+//                 <th>Execution time</th>
+//             </tr>
+//         `;
+//     });
+//
+//     currentPage = 1;
+//     number = 1;
+//
+//     updateVisibleTable();
+// }
