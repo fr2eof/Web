@@ -25,7 +25,7 @@
                 PointsStorage storage = (PointsStorage) session.getAttribute("tableData");
                 if (storage != null) {
                     for (Point point : storage.getPoints()) {
-                        String currentTime = point.getCurrentTime();
+                        String currentTime = String.valueOf(point.getCurrentTime());
             %>
             {
                 x: <%= point.x() %>,

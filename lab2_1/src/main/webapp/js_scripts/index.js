@@ -1,16 +1,19 @@
 let backgroundMusic = document.createElement('audio');
 let vBoyMusic = document.createElement('audio');
 vBoyMusic.src = './media/soundtracks/boy.mp3';
-
+let play = false;
 
 function handleTankClick(tankName) {
     let backgroundImageUrl;
     if (tankName === "bz-75") {
         backgroundImageUrl = "url('./media/picture/background/chineseBackground.png')";
+        play = true;
     } else if (tankName === "maus") {
         backgroundImageUrl = "url('./media/picture/background/germanBackground.png')";
+        play = true;
     } else if (tankName === "t-34-85") {
         backgroundImageUrl = "url('./media/picture/background/sovetBackground.png')";
+        play = true;
     }
 
     document.body.style.backgroundImage = backgroundImageUrl;
@@ -35,12 +38,16 @@ window.addEventListener('load', () => {
         }
     }, {once: true});
     document.body.querySelector('#vzvod').addEventListener('click', () => {
-        launch_toast("You have no friends")
+        launch_toast("У тебя нет друзей")
     });
     document.body.querySelector('#v_boy').addEventListener('click', () => {
-        vBoyMusic.play();
-        vBoyMusic.addEventListener('ended', () => {
-            document.location = './playGround.jsp'
-        });
+        if (play === true) {
+            vBoyMusic.play();
+            vBoyMusic.addEventListener('ended', () => {
+                document.location = './playGround.jsp'
+            });
+        } else {
+            launch_toast("Выбери свою машину уничтожения")
+        }
     });
 });

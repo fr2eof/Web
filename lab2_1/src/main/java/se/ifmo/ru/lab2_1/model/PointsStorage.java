@@ -10,7 +10,11 @@ import java.util.List;
 @Stateful
 @SessionScoped
 public class PointsStorage implements Serializable {
-    private final List<Point> points = new ArrayList<>();
+    private final List<Point> points;
+
+    public PointsStorage() {
+        this.points = new ArrayList<>();
+    }
 
     public void addPoint(Point point) {
         points.add(point);

@@ -1,5 +1,6 @@
 package se.ifmo.ru.lab2_1.servlet;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -31,7 +32,7 @@ public class ControllerServlet extends HttpServlet {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid request parameters");
             return;
         }
-
-        request.getRequestDispatcher("./areaCheck").forward(request, response);
+        ServletContext context = getServletContext();
+        context.getNamedDispatcher("areaCheck").forward(request, response);
     }
 }
