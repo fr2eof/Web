@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../order/libs/fastcgi-lib.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/src/main/java/com/web/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/src/main/java/com/web/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/src/main/java/com/web/JsonWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/src/main/java/com/web/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/js_scripts/graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/js_scripts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/js_scripts/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/media/toast_icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/static/style/toast.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1/target/classes/se/ifmo/ru/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/target/classes/se/ifmo/ru/App.class" afterDir="false" />
-    </list>
+    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fr2eof"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:fr2eof/Web.git",
+    "accountId": "49f8d071-3fa4-4a6c-ba6b-ae3e8e161b89"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -209,6 +206,7 @@
       <workItem from="1732134957001" duration="5455000" />
       <workItem from="1732194729886" duration="3579000" />
       <workItem from="1732229473961" duration="14114000" />
+      <workItem from="1732360744888" duration="633000" />
     </task>
     <servers />
   </component>
