@@ -13,10 +13,17 @@
             <property name="hibernate.show_sql" value="true"/> <!-- Show SQL in console -->
             <property name="hibernate.format_sql" value="true"/> <!-- Show SQL formatted -->
 
+<<<<<<< HEAD
 <!--            &lt;!&ndash;             helios &ndash;&gt;-->
 <!--            <property name="javax.persistence.jdbc.user" value="s412952"/>-->
 <!--            <property name="javax.persistence.jdbc.password" value="xY2D3h4Sho69LfID"/>-->
 <!--            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pg:5432/studs"/>-->
+=======
+            <!--             helios -->
+            <property name="javax.persistence.jdbc.user" value=""/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pg:5432/studs"/>
+>>>>>>> 21d77b1370e940183bd69b09b02008ec39a55448
 
                         <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/mydatabase"/>
                         <property name="hibernate.connection.password" value="mypassword"/>
