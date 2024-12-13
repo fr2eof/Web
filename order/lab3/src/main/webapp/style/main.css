@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', serif; /* Шрифт */
+    color: #4a4a4a; /* Цвет текста */
+    margin: auto; /* Выравнивание по центру */
+    padding: 20px; /* Отступы */
+    background-color: #f9f9f9; /* Цвет фона */
+    height: 100%; /* Высота */
+    min-height: 100vh; /* Минимальная высота */
+}
+
+header {
+    background-color: #ffffff; /* Цвет фона */
+    padding: 20px; /* Отступы */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+h1 {
+    font-size: 28px; /* Размер шрифта */
+    margin-top: 0; /* Отступ сверху */
+    color: black; /* Цвет текста */
+}
+
+.student-info {
+    font-family: Georgia, serif; /* Шрифт */
+    font-size: 20px; /* Размер шрифта */
+    color: #00527e; /* Цвет текста */
+}
+
+.content-container {
+    display: flex; /* Выравнивание элементов в ряд */
+    flex-direction: row; /* Направление ряда */
+    align-items: center; /* Выравнивание по центру */
+}
+
+#canvas {
+    background-color: #cdcdcd; /* Цвет фона */
+}
+
+#pointForm {
+    display: flex; /* Выравнивание элементов в колонку */
+    flex-direction: column; /* Направление колонки */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    font-size: 18px; /* Размер шрифта */
+    background-color: #cdcdcd; /* Цвет фона */
+    width: 450px; /* Ширина */
+    height: 300px; /* Высота */
+}
+
+.horizontal {
+    border: 1px solid black; /* Граница */
+    padding: 12px; /* Внутренние отступы */
+    margin-right: 20px; /* Отступ справа */
+    margin-top: 20px; /* Отступ сверху */
+    border-radius: 8px; /* Скругление углов */
+}
+
+label {
+    margin-bottom: 10px; /* Отступ снизу */
+    font-size: 16px; /* Размер шрифта */
+    color: #4a4a4a; /* Цвет текста */
+}
+
+input {
+    width: 100%; /* Ширина */
+    height: 20px; /* Высота */
+    margin-bottom: 15px; /* Отступ снизу */
+    padding: 10px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругление углов */
+    box-sizing: border-box; /* Учет отступов в ширине */
+    background-color: #f1f7f9; /* Цвет фона */
+}
+
+.valid-input {
+    border-color: #28a745; /* Цвет границы для валидного ввода */
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25); /* Тень для валидного ввода */
+}
+
+.invalid-input {
+    border-color: #dc3545; /* Цвет границы для невалидного ввода */
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25); /* Тень для невалидного ввода */
+}
+
+button {
+    background-color: #00527e; /* Цвет фона */
+    color: rgba(255, 255, 255, 0.84); /* Цвет текста */
+    border: none; /* Убираем границу */
+    margin-top: 10px; /* Отступ сверху */
+    padding: 12px 15px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор указателя */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s ease; /* Анимация изменения цвета фона */
+    font-size: 14px; /* Размер шрифта */
+}
+
+button:hover {
+    background-color: #5427aa; /* Цвет фона при наведении */
+    color: #f4f4f4; /* Цвет текста при наведении */
+}
+
+table {
+    width: 100%; /* Ширина */
+    border-collapse: collapse; /* Схлопывание границ */
+    margin-top: 5px; /* Отступ сверху */
+    font-size: 18px; /* Размер шрифта */
+    background-color: #cdcdcd; /* Цвет фона */
+}
+
+.button-container {
+    display: flex; /* Выравнивание элементов в ряд */
+    width: 100%; /* Ширина */
+}
+
+.button-container button {
+    margin-right: 7px; /* Отступ справа */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Граница */
+    padding: 3px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+footer {
+    position: absolute; /* Фиксированное положение */
+    bottom: 0; /* Прижимаем к низу */
+    margin-top: 40px; /* Отступ сверху */
+    font-size: 14px; /* Размер шрифта */
+    color: #6798b4; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.checkbox-group, .radio-group {
+    display: flex; /* Выравнивание элементов в ряд */
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center; /* Выравнивание по центру */
+    gap: 7px; /* Отступ между элементами */
+}
+
+.checkbox-item, .radio-item {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.checkbox-item label, .radio-item label {
+    display: block; /* Отображение как блочный элемент */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 20px; /* Ширина */
+    height: 20px; /* Высота */
+}
