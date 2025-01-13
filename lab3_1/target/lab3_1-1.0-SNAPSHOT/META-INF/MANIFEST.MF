@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Created-By: IntelliJ IDEA
-Built-By: fr2eof
-Build-Jdk: JetBrains Runtime 17.0.12 - aarch64
-
