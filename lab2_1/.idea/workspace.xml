@@ -9,7 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="" />
+    <list default="true" id="702aca3b-8391-4c45-b66d-592ef68fb893" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/java/com/web/lab2/lab2/model/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/java/com/web/lab2/lab2/model/PointsStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/java/com/web/lab2/lab2/servlet/AreaCheckServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/java/com/web/lab2/lab2/servlet/ControllerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/java/com/web/lab2/lab2/validation/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/answer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/js_scripts/graph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/js_scripts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/js_scripts/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/style/answer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order/lab2/src/main/webapp/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/java/com/web/bean/HitCheckBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/java/com/web/bean/HitCheckBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/graph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/js_scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/src/main/webapp/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/src/main/webapp/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/target/classes/com/web/bean/HitCheckBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/target/classes/com/web/bean/HitCheckBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3_1/target/lab3_1-1.0-SNAPSHOT/WEB-INF/classes/com/web/bean/HitCheckBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3_1/target/lab3_1-1.0-SNAPSHOT/WEB-INF/classes/com/web/bean/HitCheckBean.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,18 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "fr2eof"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fr2eof&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:fr2eof/Web.git",
-    "accountId": "49f8d071-3fa4-4a6c-ba6b-ae3e8e161b89"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:fr2eof/Web.git&quot;,
+    &quot;accountId&quot;: &quot;49f8d071-3fa4-4a6c-ba6b-ae3e8e161b89&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -68,7 +89,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
@@ -207,6 +228,11 @@
       <workItem from="1732194729886" duration="3579000" />
       <workItem from="1732229473961" duration="14114000" />
       <workItem from="1732360744888" duration="633000" />
+      <workItem from="1732446438500" duration="649000" />
+      <workItem from="1732623078429" duration="731000" />
+      <workItem from="1732729981163" duration="31000" />
+      <workItem from="1733136451950" duration="2958000" />
+      <workItem from="1733145571979" duration="3093000" />
     </task>
     <servers />
   </component>

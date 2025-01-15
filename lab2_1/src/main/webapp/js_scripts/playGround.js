@@ -94,7 +94,6 @@ window.addEventListener('load', () => {
         }
 
         drawPoint(x, yValues);
-        let currentTime = new Date().toLocaleTimeString('ru-RU', {hour12: false});//todo rotate somewhere
 
         setTimeout(() => {
             event.target.submit();
