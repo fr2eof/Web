@@ -2,3 +2,4 @@
 .idea/
 lab3/src/main/resources/META-INF/persistence.xml
 lab1/.DS_Store
+wildfly-34.0.0.Final/
