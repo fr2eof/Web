@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--navbar-background);
+    color: var(--navbar-text);
+}
+
+.navbar-logo a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-links li a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-links li button {
+    background: none;
+    border: none;
+    color: var(--navbar-text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li button:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-links li span {
+    font-size: 1rem;
+    color: var(--navbar-text);
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.profile-avatar:hover {
+    border-color: var(--primary-color);
+}

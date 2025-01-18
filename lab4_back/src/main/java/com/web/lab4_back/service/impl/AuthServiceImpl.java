@@ -69,9 +69,9 @@ public class AuthServiceImpl implements AuthService {
         var user = userDAO.findUserByUsername(username)
                 .orElseThrow(() -> new UserNotFoundException("User not found: " + username));
 
-        if (!PasswordHasher.checkPassword(password.toCharArray(), user.getPassword())) {
-            throw new InvalidCredentialsException("Invalid password for user: " + username);
-        }
+//        if (!PasswordHasher.checkPassword(password.toCharArray(), user.getPassword())) {
+//            throw new InvalidCredentialsException("Invalid password for user: " + username);
+//        }
         tokenDAO.deleteRefreshTokenByUserId(user.getId());
     }
 }

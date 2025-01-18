@@ -1,0 +1,147 @@
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+.auth-content {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--modal-background);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--textfield-background);
+    color: var(--textfield-text);
+    box-sizing: border-box;
+}
+
+.auth-form input:focus {
+    border-color: var(--textfield-focus-border);
+    outline: none;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: var(--hover-color);
+}
+
+.auth-form button:disabled {
+    background-color: var(--border-color);
+    cursor: not-allowed;
+}
+
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.auth-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1052px) {
+    .auth-content {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    .auth-form {
+        gap: 20px;
+    }
+
+    .auth-form input {
+        padding: 12px;
+    }
+
+    .auth-form button {
+        padding: 12px;
+    }
+}
+
+
+@media (min-width: 803px) and (max-width: 1051px) {
+    .auth-content {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .auth-form {
+        gap: 15px;
+    }
+
+    .auth-form input {
+        padding: 10px;
+    }
+
+    .auth-form button {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 802px) {
+    .auth-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .auth-form {
+        gap: 10px;
+    }
+
+    .auth-form input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .auth-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .auth-link {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+:root {
+    --background-color: #f0f0f0;
+    --axis-color: #000000;
+    --shape-fill: rgba(0, 0, 255, 0.5);
+    --point-hit-color: green;
+    --point-miss-color: red;
+    --text-color: black;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --axis-color: #ffffff;
+    --shape-fill: rgba(100, 149, 237, 0.5);
+    --point-hit-color: lime;
+    --point-miss-color: tomato;
+    --text-color: white;
+}
+
+.canvas-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: var(--background-color);
+    border: 1px solid var(--axis-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.canvas-axis {
+    stroke: var(--axis-color);
+    stroke-width: 2;
+}
+
+.canvas-tick {
+    stroke: var(--axis-color);
+    stroke-width: 1;
+}
+
+.canvas-shape {
+    fill: var(--shape-fill);
+    stroke: var(--axis-color);
+    stroke-width: 1;
+}
+
+.canvas-point {
+    fill: var(--point-miss-color);
+    stroke: var(--axis-color);
+    stroke-width: 1;
+}
+
+.canvas-point.hit {
+    fill: var(--point-hit-color);
+}
+
+.canvas-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    fill: var(--text-color);
+}

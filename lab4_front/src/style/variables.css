@@ -1,0 +1,61 @@
+:root {
+    --background-color: #ffffff;
+    --clicker-background-color: #dddddd;
+    --text-color: #000000;
+    --primary-color: #3498db;
+    --secondary-color: #1abc9c;
+    --border-color: #bdc3c7;
+    --hover-color: #2980b9;
+    --modal-background: #ecf0f1;
+    --modal-text: #2c3e50;
+    --navbar-background: #2c3e50;
+    --navbar-text: white;
+    --footer-background: #2c3e50;
+    --footer-text: white;
+    --footer-link-hover: #1abc9c;
+    --clock-background: #3498db;
+    --clock-text: white;
+
+    --textfield-background: #ffffff;
+    --textfield-border: #bdc3c7;
+    --textfield-text: #000000;
+    --textfield-placeholder: #7f8c8d;
+    --textfield-hover-border: #3498db;
+    --textfield-focus-border: #2980b9;
+
+    --toast-background: #333333;
+    --toast-text: #ffffff;
+    --toast-border-radius: 5px;
+    --toast-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --toast-padding: 10px 20px;
+    --toast-animation-duration: 0.3s;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --clicker-background-color: #232323;
+    --text-color: #b6b6b6;
+    --primary-color: #90caf9;
+    --secondary-color: #16a085;
+    --border-color: #333333;
+    --hover-color: #64b5f6;
+    --modal-background: #2c3e50;
+    --modal-text: #b6b6b6;
+    --navbar-background: #1d2833;
+    --navbar-text: #b6b6b6;
+    --footer-background: #1d2833;
+    --footer-text: #b6b6b6;
+    --footer-link-hover: #16a085;
+    --clock-background: #90caf9;
+    --clock-text: #b6b6b6;
+
+    --textfield-background: #232323;
+    --textfield-border: #f1ecec;
+    --textfield-text: #f4f4f4;
+    --textfield-placeholder: #7f8c8d;
+    --textfield-hover-border: #90caf9;
+    --textfield-focus-border: #af0808;
+
+    --toast-background: #1d2833;
+    --toast-text: #b6b6b6;
+}

@@ -1,0 +1,132 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-container {
+    margin-bottom: 20px;
+}
+
+.textfield {
+    background-color: var(--textfield-background);
+    border: 1px solid var(--textfield-border);
+    color: var(--textfield-text);
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.textfield input {
+    background-color: var(--textfield-background);
+    color: var(--textfield-text);
+}
+
+.textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: var(--textfield-border);
+}
+
+.textfield:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: var(--textfield-hover-border);
+}
+
+
+@media (min-width: 1052px) {
+    .main-page {
+        padding: 40px;
+    }
+
+    .input-container {
+        gap: 30px;
+    }
+
+    .canvas-container {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 803px) and (max-width: 1051px) {
+    .main-page {
+        padding: 30px;
+    }
+
+    .input-container {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .canvas-container {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 802px) {
+    .main-page {
+        padding: 20px;
+    }
+
+    .input-container {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .canvas-container {
+        margin-bottom: 10px;
+    }
+
+    .textfield {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
